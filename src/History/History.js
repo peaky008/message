@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import './history.css';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom'
 
 export default function History() {
 
@@ -12,10 +11,7 @@ export default function History() {
             <ul>
                 {history.map((item, index) => (
                     <li key={index}>
-                        < Link to='/'>{item.word}</Link>
-                        {/* <a> {item.word} </a> */}
-                        {/* < Link to='/'>home</Link>
-            < Link to='/footer'>footer</Link> */}
+                        <a> {item.word} </a>
                     </li>
                 ))}
             </ul>
