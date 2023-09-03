@@ -61,7 +61,7 @@ const HomePage = () => {
                     <div key={index}>
                       <p>Phonetic Text: {phonetic.text}</p>
                       <audio controls src={phonetic.audio}>
-                        Your browser does not support the audio element.
+                        Your browser does not support the audio element
                       </audio>
                     </div>
                   ))}
